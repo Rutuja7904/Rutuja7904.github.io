@@ -1,48 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Rutuja Patil Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rutuja Patil Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Rutuja Patil</h1>
-        <p>MCA Student | Aspiring Web Developer</p>
-    </header>
+<nav>
+    <div class="logo">RUTUJA</div>
 
-    <section>
-        <h2>About Me</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+<section id="home" class="panel">
+    <h1>RUTUJA PATIL</h1>
+
+    <h2 id="typing"></h2>
+
+    <p>
+        MCA Student passionate about Web Development
+        and Software Development.
+    </p>
+
+    <button>Download Resume</button>
+</section>
+
+<section id="about" class="panel">
+    <h1>ABOUT ME</h1>
+
+    <div class="card">
         <p>
-            I am an MCA student passionate about Web Development and Software Development.
-            I enjoy building responsive websites and learning new technologies.
+            MCA Student passionate about Web Development,
+            React Development and creating user-friendly
+            applications.
         </p>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>SQL</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
+<section id="skills" class="panel">
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li>College Portal</li>
-            <li>Student Management System</li>
-        </ul>
-    </section>
+<h1>SKILLS</h1>
 
-    <section>
-        <h2>Contact</h2>
-        <p>GitHub: github.com/Rutuja7904</p>
-    </section>
+<div class="skills-grid">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">SQL</div>
+<div class="skill">GitHub</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="panel">
+
+<h1>PROJECTS</h1>
+
+<div class="slider">
+
+<div class="project-card">
+<h2>College Portal</h2>
+<p>Student and Faculty Management System.</p>
+</div>
+
+<div class="project-card">
+<h2>Student Management</h2>
+<p>CRUD operations using React and SQL.</p>
+</div>
+
+<div class="project-card">
+<h2>College Chatbot</h2>
+<p>AI chatbot using n8n workflows.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="education" class="panel">
+
+<h1>EDUCATION</h1>
+
+<div class="card">
+<p>MCA - Shivaji University</p>
+<p>2024 - 2026</p>
+</div>
+
+</section>
+
+<section id="contact" class="panel">
+
+<h1>CONTACT</h1>
+
+<div class="icons">
+
+<i class="fab fa-github"></i>
+<i class="fab fa-linkedin"></i>
+<i class="fas fa-envelope"></i>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -1,27 +1,132 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
-    margin: 0;
-    padding: 20px;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
-header {
-    text-align: center;
-    padding: 40px;
+body{
+font-family:Segoe UI;
+background:#050816;
+color:white;
+overflow-x:hidden;
 }
 
-section {
-    background: #222;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 50px;
+display:flex;
+justify-content:space-between;
+background:rgba(0,0,0,.6);
+backdrop-filter:blur(10px);
+z-index:100;
 }
 
-h1 {
-    color: #00d4ff;
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#00e5ff;
 }
 
-h2 {
-    color: #00d4ff;
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.panel{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+
+#home h1{
+font-size:80px;
+background:linear-gradient(
+90deg,
+#00e5ff,
+#ff00ff
+);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+#typing{
+margin:20px 0;
+color:#00e5ff;
+}
+
+button{
+padding:15px 30px;
+background:none;
+border:2px solid #00e5ff;
+color:white;
+cursor:pointer;
+margin-top:20px;
+transition:.3s;
+}
+
+button:hover{
+box-shadow:0 0 20px #00e5ff;
+}
+
+.card{
+width:60%;
+padding:30px;
+border:1px solid #00e5ff;
+border-radius:15px;
+box-shadow:0 0 20px #00e5ff50;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.skill{
+padding:30px;
+border:1px solid #00e5ff;
+text-align:center;
+transition:.4s;
+}
+
+.skill:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00e5ff;
+}
+
+.slider{
+display:flex;
+gap:30px;
+overflow-x:auto;
+padding:20px;
+}
+
+.project-card{
+min-width:300px;
+padding:30px;
+border:1px solid #ff00ff;
+border-radius:15px;
+}
+
+.icons{
+font-size:50px;
+display:flex;
+gap:40px;
+}
+
+.icons i:hover{
+color:#00e5ff;
+transform:scale(1.2);
 }

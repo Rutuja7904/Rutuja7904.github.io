@@ -1,7 +1,6 @@
 const text =
 [
 "ASPIRING WEB DEVELOPER",
-"REACT DEVELOPER",
 "MCA STUDENT"
 ];
 
